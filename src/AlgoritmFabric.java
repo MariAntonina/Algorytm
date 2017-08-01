@@ -1,4 +1,5 @@
 import Algoritms.*;
+import Struktury.TestowanieListy;
 
 public class AlgoritmFabric {
 
@@ -60,6 +61,8 @@ public class AlgoritmFabric {
                 return new MinMax();
             case "lider":
                 return new Lider();
+            case "testowanielist":
+                return new TestowanieListy();
             default:
                 throw new Exception("NIe ma takiego algorytmu!");
         }
