@@ -1,5 +1,9 @@
 import Algoritms.*;
 import Struktury.TestowanieListy;
+import StrukturyDanych.ArrayListTest;
+import StrukturyDanych.StosArrayList;
+import StrukturyDanych.ZmienneITablice;
+import StrukturyDanych.wlasnaLista;
 
 public class AlgoritmFabric {
 
@@ -63,6 +67,14 @@ public class AlgoritmFabric {
                 return new Lider();
             case "testowanielist":
                 return new TestowanieListy();
+            case "duplikat":
+                return new ZmienneITablice();
+            case "todelete":
+                return new ArrayListTest();
+//            case "wlasnalista":
+//                return new wlasnaLista();
+            case "palindromnastosie":
+                return new StosArrayList();
             default:
                 throw new Exception("NIe ma takiego algorytmu!");
         }

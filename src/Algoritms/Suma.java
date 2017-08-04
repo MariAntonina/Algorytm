@@ -18,7 +18,7 @@ public class Suma extends AbstractAlgoritm{
         int sum = 0;
         for(int i = 1; i < input.length; i++){
             sum += Integer.parseInt(input[i]);
-            System.out.println(sum);
+//            System.out.println(sum);
         }
         System.out.println(sum);
     }
