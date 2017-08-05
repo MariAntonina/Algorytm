@@ -73,7 +73,7 @@ public class AlgoritmFabric {
                 return new ArrayListTest();
 //            case "wlasnalista":
 //                return new wlasnaLista();
-            case "palindromnastosie":
+            case "palindromnastos":
                 return new StosArrayList();
             default:
                 throw new Exception("NIe ma takiego algorytmu!");
