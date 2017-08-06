@@ -23,13 +23,13 @@ public class mRandom extends AbstractAlgoritm {
         int tab2[] = new int[n];
         int tab3[] = new int[n];
 
-        //--->1
         for (int i = 0; i < tab.length ; i++) {
             tab[i]= i*2;
             System.out.printf("%s ",tab[i]);
         }
-//--->2
+
         System.out.println();
+
         for (int i = 0; i < tab2.length; i++) {
             tab2[i]=i*2+1;
             System.out.printf("%s ",tab2[i]);
@@ -37,8 +37,6 @@ public class mRandom extends AbstractAlgoritm {
 
         System.out.println();
 
-
-        // --->3
         for (int i = 0; i < tab3.length; i++) {
             tab3[i]= mRand.nextInt();
             System.out.printf("%s ",tab3[i]);
@@ -46,8 +44,5 @@ public class mRandom extends AbstractAlgoritm {
 
         int k = tab[14];
         System.out.println(k);
-
-
-
     }
 }

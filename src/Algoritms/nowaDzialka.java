@@ -17,6 +17,5 @@ public class nowaDzialka extends AbstractAlgoritm{
 
             System.out.println(kk);
         }
-
     }
 }

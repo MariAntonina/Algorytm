@@ -12,7 +12,6 @@ public class jednostkiDziesiatki extends AbstractAlgoritm {
     @Override
     public void runAlgoritm(String[] input) {
         int n = Integer.parseInt(input[1]);
-
         System.out.println(DziesiatkiIJednostki(n));
     }
 

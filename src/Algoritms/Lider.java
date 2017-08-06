@@ -22,7 +22,6 @@ public class Lider extends AbstractAlgoritm {
             {
                 max = tab[i];
             }
-
         }
         System.out.println(max);
     }

@@ -17,7 +17,6 @@ public class tablicaDwuwymiarowa extends AbstractAlgoritm {
 
         int n = Integer.parseInt(input[1]);
 
-
         if (Math.sqrt(n) % 1 == 0) {
             int sqrt = (int) Math.sqrt(n);
 

@@ -8,6 +8,7 @@ public class najwiekszyWspolnyDzielnik extends AbstractAlgoritm {
 
     @Override
     public void runAlgoritm(String[] input) {
+
         int n = Integer.parseInt(input[1]);
         int k = Integer.parseInt(input[2]);
 

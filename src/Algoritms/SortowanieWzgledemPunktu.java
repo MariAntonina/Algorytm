@@ -46,9 +46,7 @@ public class SortowanieWzgledemPunktu extends AbstractAlgoritm {
                     tablicaWynikow[i + 1][0] = temp2;
                 }
             }
-
         }
-
         for (int i = 0; i < n; i++) {
 
             int punkt = tablicaWynikow[i][0];
@@ -56,8 +54,6 @@ public class SortowanieWzgledemPunktu extends AbstractAlgoritm {
                 if (punkt == tab[j][0])
                     System.out.printf("Punkt: %d; X: %d; Y: %d\n",
                             punkt, tab[j][1], tab[j][2]);
-
-
             }
         }
     }

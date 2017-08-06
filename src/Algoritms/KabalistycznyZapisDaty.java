@@ -46,7 +46,6 @@ public class KabalistycznyZapisDaty extends AbstractAlgoritm {
         }
         System.out.println();
         System.out.printf("%s ",sum);
-
     }
 }
 

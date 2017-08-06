@@ -77,6 +77,8 @@ public class AlgoritmFabric {
                 return new StosArrayList();
             case "ciasteczkowezawody":
                 return new Obzartuchy();
+            case "poprawnypesel":
+                return new WeryfikacjaPeselu();
             default:
                 throw new Exception("NIe ma takiego algorytmu!");
         }

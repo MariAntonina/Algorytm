@@ -17,7 +17,6 @@ public class Dominanta extends AbstractAlgoritm {
             T[i] = Integer.parseInt(input[i]);
             if(T[i]>max)
                 max = T[i];
-//            System.out.print(T[i]);
         }
 
         System.out.println(max);
@@ -26,7 +25,6 @@ public class Dominanta extends AbstractAlgoritm {
 
         for (int i = 0; i <= max ; i++) {
             L[i]=i;
-             //L[T[i]]++
         }
 
         for (int i = 0; i <= max; i++) {
@@ -35,16 +33,15 @@ public class Dominanta extends AbstractAlgoritm {
 
         for (int i = 0; i <= max; i++) {
             System.out.printf("%s", L[i]);
-
         }
 
         int maxIlosc=0;
 
         System.out.println();
+
         for (int i = 0; i <= max; i++) {
             System.out.printf("%s", W[i]);
         }
-
         for (int i = 0; i <= max; i++) {
             if(W[i]> maxIlosc )
                 maxIlosc = W[i];

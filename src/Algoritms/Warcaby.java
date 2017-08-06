@@ -23,14 +23,12 @@ public class Warcaby extends AbstractAlgoritm {
              licznik=0;}
         else{licznik=1;}
 
-
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < k; j++) {
                 if (licznik % 2 == 0) {
                     tab[i][j] = "C";
                 } else {
                     tab[i][j] = "B";
-//                    System.out.printf("%s", tab[i][j]);
                 }
                 licznik++;
             }
