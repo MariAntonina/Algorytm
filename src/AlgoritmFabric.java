@@ -75,6 +75,8 @@ public class AlgoritmFabric {
 //                return new wlasnaLista();
             case "palindromnastos":
                 return new StosArrayList();
+            case "ciasteczkowezawody":
+                return new Obzartuchy();
             default:
                 throw new Exception("NIe ma takiego algorytmu!");
         }

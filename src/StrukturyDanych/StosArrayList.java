@@ -13,8 +13,8 @@ public class StosArrayList extends AbstractAlgoritm {
 
     @Override
     public void runAlgoritm(String[] input) {
-        Stack<Integer> st = new Stack<>();
 
+        Stack<Integer> st = new Stack<>();
         ArrayList<Integer> doStosu = new ArrayList<Integer>();
 
         for (int i = 1; i < input.length; i++) {
