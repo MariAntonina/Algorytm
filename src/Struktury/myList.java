@@ -106,7 +106,28 @@ public class myList {
             p = p.next;
         }
     }
-
+    public void toDeleteAtBegining(int elDoUs, myList list) {
+        Element p = getElementForward(elDoUs, list);
+        counter--;
+        if (p.prev == null) {
+            _head = p.next;
+            Element nextEl = p.next;
+            nextEl.prev = null;
+        } else {
+            p.prev.next = p.next;
+        }
+    }
+    public void toDeleteAtTheEnd(int elDoUs, myList list){
+        Element p = getElementForward(elDoUs, list);
+        counter--;
+        if(p.next == null){
+            _tail = p.prev;
+            Element prevEl = p.prev;
+            prevEl.next =null;
+        }else{
+            p.next.prev=p.prev;
+        }
+    }
 
 }
 

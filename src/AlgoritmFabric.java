@@ -1,4 +1,7 @@
 import Algoritms.*;
+import Struktury.ONP;
+import Struktury.Stos;
+import Struktury.TestowanieKopca;
 import Struktury.TestowanieListy;
 import StrukturyDanych.ArrayListTest;
 import StrukturyDanych.StosArrayList;
@@ -79,6 +82,12 @@ public class AlgoritmFabric {
                 return new Obzartuchy();
             case "poprawnypesel":
                 return new WeryfikacjaPeselu();
+            case "wstawianieprzezkocpowanie":
+                return new TestowanieKopca();
+            case "przeliczaniesystemow":
+                return new Stos();
+            case  "odwrotnanotacja":
+                return new ONP();
             default:
                 throw new Exception("NIe ma takiego algorytmu!");
         }
