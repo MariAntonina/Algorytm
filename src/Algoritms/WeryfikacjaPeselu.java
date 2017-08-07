@@ -22,7 +22,7 @@ public class WeryfikacjaPeselu extends AbstractAlgoritm {
 
         char s[] = String.valueOf(sum).toCharArray();
 
-        if (s[s.length - 1]=='0') {
+        if (s[s.length - 1]== '0') {
             System.out.println("Pesel prawidłowy");
         }else {
             System.out.println("Zły pesel");

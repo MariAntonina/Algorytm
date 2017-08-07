@@ -1,6 +1,8 @@
 package Algoritms;
 
 
+import java.util.ArrayList;
+
 public class zliczaczLiter extends AbstractAlgoritm {
     @Override
     public String getName() {
@@ -9,52 +11,52 @@ public class zliczaczLiter extends AbstractAlgoritm {
 
     @Override
     public void runAlgoritm(String[] input) {
-        String word;
+        int n = 0;
         for (int i = 1; i < input.length; i++) {
-            word = input[i];
-            char[] letter = word.toCharArray();
-
-//        for (int j = 0; j < letter.length; j++) {
-//            int sum = 0;
-//            char litera;
-//            litera = letter[j];
-//            for (int k = 0; k < letter.length; k++) {
-//                if(letter[j] == litera)
-//                    sum = sum + 1;
-//                System.out.print(litera);
-//            }
+            n += input[i].length();
         }
-//        System.out.print(sum +" " );
-    }
-}
+        String word;
+//        String tab[] = new String[n];
+        char letter[] = new char[n];
+        ArrayList<char[]> litery = new ArrayList<>();
+        for (int i = 2; i < input.length; i++) {
+            word = input[i];
+            letter = word.toCharArray();
+            for (int j = 0; j < letter.length; j++) {
+//                System.out.print(letter[j]);
+
+//                litery.add(String.toChars(letter[j]));
+            }
+            System.out.println(litery);
+        }
 
 
-
-
-
-
-//        int n = Integer.parseInt(input[1]);
-////        char ABC[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".toCharArray();
-////        char abc[] = "abcdefghijklmnopqrstuvwxyz".toCharArray();
-//        String word;
-//        char letter[];
-//        int counter = 0;
+            //        for (int i = 0; i < input.length - 1; i++) {
+//            tab[i] = input[i + 1];
+//            System.out.print(tab[i]);
+        }
+//        for (int i = 0; i <tab.length; i++) {
+//            letter[i] = tab[i].charAt(i);
+//        }
+//        System.out.println(letter);
 //
-//        for (int i = 2; i < input.length; i++) {
-//            word = input[i];
-//            letter = word.toCharArray();
-////            for (int j = 0; j < letter.length; j++) {
-////                System.out.print(letter[j]);
-////            }
-//        for (int j = 0; j < letter.length ; j++) {
-//            char litera;
-//            litera = letter[j];
-//            for (int k = 0; k < ABC.length ; k++) {
-//            if(ABC[k]==litera || abc[k]==litera) {
-//                counter++;
-//                System.out.printf("%s", litera + " " + counter);
+//
+//        ArrayList<String > litery = new ArrayList<String>();
+//        for (int i = 1; i < input.length; i++) {
+//            for (int j = 1; j < tab.length; j++) {
+//                letter[j] = input[j].charAt(j);
+//                System.out.println(letter);
 //            }
-//            }
-//        }
-//        }
+
+ }
+
+
+
+
+
+
+
+
+
+
 

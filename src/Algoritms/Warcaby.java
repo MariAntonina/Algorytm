@@ -19,24 +19,42 @@ public class Warcaby extends AbstractAlgoritm {
 
         int licznik;
 
-        if (color.equals("C")){
-             licznik=0;}
-        else{licznik=1;}
+        if (color.equals("C")) {
+            licznik = 0;
+        } else {
+            licznik = 1;
+        }
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < k; j++) {
-                if (licznik % 2 == 0) {
-                    tab[i][j] = "C";
+                if (i == 0 && j == 0)
+                    tab[i][j] = color;
+                else if (j == 0) {
+                    if (tab[i - 1][j] == "B") {
+                        tab[i][j] = color;
+                        licznik = 0;
+                    } else {
+                        tab[i][j] = "B";
+                        licznik = 1;
+                    }
                 } else {
-                    tab[i][j] = "B";
+                    if (licznik % 2 == 0) {
+                        tab[i][j] = "C";
+                    } else {
+                        tab[i][j] = "B";
+                    }
                 }
                 licznik++;
             }
         }
-        for (int i=0;i<n;i++){
-            for(int j=0; j<k; j++){
-                System.out.printf("%s", tab[i][j]);}
-        System.out.println();}
+
+            for (int i = 0; i < n; i++) {
+                for (int j = 0; j < k; j++) {
+                    System.out.printf("%s", tab[i][j]);
+                }
+                System.out.println();
+            }
+        }
     }
-}
+
 
