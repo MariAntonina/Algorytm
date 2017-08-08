@@ -88,6 +88,8 @@ public class AlgoritmFabric {
                 return new Stos();
             case  "odwrotnanotacja":
                 return new ONP();
+            case "rownanieliniowe":
+                return new RownanieLiniowe();
             default:
                 throw new Exception("NIe ma takiego algorytmu!");
         }

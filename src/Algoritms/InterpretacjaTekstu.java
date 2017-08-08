@@ -12,7 +12,7 @@ public class InterpretacjaTekstu extends AbstractAlgoritm {
         int n = input[1].length();
         int counter = 0;
 
-//---
+
 //        char A[] = new char[n];
 //        char B[] = new char[n];
 //        char C[] = new char[n];
@@ -20,12 +20,12 @@ public class InterpretacjaTekstu extends AbstractAlgoritm {
 //        for (int i = 0; i < n; i++) {
 //            A[i] = input[1].charAt(i);
 //            B[i] = input[2].charAt(i);
-//            C[i] = input[3].charAt(i);
-//        }
-// ---
+//            C[i] = input[3].charAt(i);}
 
            char A[] = input[1].toCharArray();
+
            char B[] = input[2].toCharArray();
+
            char C[] = input[3].toCharArray();
 
         for (int i = 0; i < n; i++) {

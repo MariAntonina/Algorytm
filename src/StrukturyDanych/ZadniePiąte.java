@@ -24,7 +24,7 @@ public class ZadniePiąte extends AbstractAlgoritm {
                     break;
                 case ")":
                     v1 =st.pop();
-                    st.push();
+//                    st.push();
                 case "M":
                     v1 = st.pop();
                     v2 = st.pop();
