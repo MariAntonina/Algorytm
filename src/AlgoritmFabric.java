@@ -3,10 +3,7 @@ import Struktury.ONP;
 import Struktury.Stos;
 import Struktury.TestowanieKopca;
 import Struktury.TestowanieListy;
-import StrukturyDanych.ArrayListTest;
-import StrukturyDanych.StosArrayList;
-import StrukturyDanych.ZmienneITablice;
-import StrukturyDanych.wlasnaLista;
+import StrukturyDanych.*;
 
 public class AlgoritmFabric {
 
@@ -100,6 +97,8 @@ public class AlgoritmFabric {
                 return new Przedszkolanka();
             case "nwd":
                 return new NWDZad10();
+            case "not2":
+                return new Notacja2();
 
             default:
                 throw new Exception("NIe ma takiego algorytmu!");

@@ -20,30 +20,22 @@ public class ZadniePiąte extends AbstractAlgoritm {
             int v2=0;
             switch (input[i]){
                 case "(":
-                    st.push(1);
+
                     break;
                 case ")":
-                    v1 =st.pop();
-//                    st.push();
+
                 case "M":
-                    v1 = st.pop();
-                    v2 = st.pop();
-                    st.push(v1 * v2);
+
+
                     break;
                 case "D":
-                    v1 = st.pop();
-                    v2 = st.pop();
-                    st.push(v1 + v2);
+
                     break;
                 case "O":
-                    v1 = st.pop();
-                    v2 = st.pop();
-                    st.push(v1 - v2);
+                   ;
                     break;
                 case "I":
-                    v1 = st.pop();
-                    v2 = st.pop();
-                    st.push(v1 / v2);
+
                     break;
                 case "R":
                     System.out.print(st.pop());
