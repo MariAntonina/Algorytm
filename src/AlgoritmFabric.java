@@ -94,6 +94,9 @@ public class AlgoritmFabric {
                 return new PorownanieDużychLiczb();
             case "punkty":
                 return new PunktyWKole();
+            case "nww":
+                return new NajWuWu();
+
             default:
                 throw new Exception("NIe ma takiego algorytmu!");
         }

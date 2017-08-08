@@ -17,10 +17,10 @@ public class PunktyWKole extends AbstractAlgoritm {
         int counter = 1;
         for (x = 0; x <= r; x++) {
             for (y = 0; y <= r; y++) {
-                if (((int) Math.sqrt(rad - y *y)) == x) {
+                if(((int) Math.sqrt(rad - y*y)) == x) {
                     counter++;
                 }
-                if ((int) Math.sqrt(rad- x *x)==y){
+                if((int) Math.sqrt(rad - x*x)==y){
                     counter++;
                 }
             }
