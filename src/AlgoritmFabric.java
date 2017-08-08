@@ -90,6 +90,8 @@ public class AlgoritmFabric {
                 return new ONP();
             case "rownanieliniowe":
                 return new RownanieLiniowe();
+            case "porownanie":
+                return new PorownanieDużychLiczb();
             default:
                 throw new Exception("NIe ma takiego algorytmu!");
         }
