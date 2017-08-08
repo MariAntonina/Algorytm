@@ -92,6 +92,8 @@ public class AlgoritmFabric {
                 return new RownanieLiniowe();
             case "porownanie":
                 return new PorownanieDużychLiczb();
+            case "punkty":
+                return new PunktyWKole();
             default:
                 throw new Exception("NIe ma takiego algorytmu!");
         }
