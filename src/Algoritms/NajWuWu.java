@@ -13,7 +13,7 @@ public class NajWuWu extends AbstractAlgoritm {
     public void runAlgoritm(String[] input) {
         int a = Integer.parseInt(input[1]);
         int b = Integer.parseInt(input[2]);
-        System.out.println(nww(a, b));
+        System.out.println("Dla liczby:" + a  + " i " + b + " wynosi: " + nww(a, b));
     }
 
     private int nwd(int a, int b) {

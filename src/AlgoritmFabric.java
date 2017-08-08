@@ -96,6 +96,10 @@ public class AlgoritmFabric {
                 return new PunktyWKole();
             case "nww":
                 return new NajWuWu();
+            case "cukierki":
+                return new Przedszkolanka();
+            case "nwd":
+                return new NWDZad10();
 
             default:
                 throw new Exception("NIe ma takiego algorytmu!");
