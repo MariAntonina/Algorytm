@@ -22,11 +22,9 @@ public class InterpretacjaTekstu extends AbstractAlgoritm {
 //            B[i] = input[2].charAt(i);
 //            C[i] = input[3].charAt(i);}
 
-           char A[] = input[1].toCharArray();
-
-           char B[] = input[2].toCharArray();
-
-           char C[] = input[3].toCharArray();
+        char A[] = input[1].toCharArray();
+        char B[] = input[2].toCharArray();
+        char C[] = input[3].toCharArray();
 
         for (int i = 0; i < n; i++) {
             if (A[i]!=B[i]) {

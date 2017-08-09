@@ -19,9 +19,7 @@ public class WeryfikacjaPeselu extends AbstractAlgoritm {
         for (int i = 0; i < pesel.length; i++) {
             sum += tab[i] * Integer.parseInt(String.valueOf(pesel[i]));
         }
-
         char s[] = String.valueOf(sum).toCharArray();
-
         if (s[s.length - 1]== '0') {
             System.out.println("Pesel prawidłowy");
         }else {

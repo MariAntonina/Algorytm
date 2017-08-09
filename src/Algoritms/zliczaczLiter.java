@@ -49,14 +49,15 @@ public class zliczaczLiter extends AbstractAlgoritm {
 //            }
 
  }
-
-
-
-
-
-
-
-
-
-
-
+//
+//
+//    public static Stream<String> lines(Path path)
+//            throws IOException
+//
+//
+//
+//
+//
+//
+//
+//

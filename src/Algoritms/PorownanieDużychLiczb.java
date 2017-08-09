@@ -15,22 +15,22 @@ public class PorownanieDużychLiczb extends AbstractAlgoritm {
         double a = Double.parseDouble(input[1]);
         double b = Double.parseDouble(input[2]);
         switch (znak) {
-            case ("<"):
+            case "<":
                 System.out.println(a<b);
                 break;
-            case (">"):
+            case ">":
                 System.out.println(a>b);
                 break;
-            case ("=="):
+            case "==":
                 System.out.println(a==b);
             break;
-            case ("!="):
+            case "!=":
                 System.out.println(a!=b);
                 break;
-            case ("<="):
+            case "<=":
                 System.out.println(a<=b);
             break;
-            case (">="):
+            case ">=":
                 System.out.println(a>=b);
                 break;
             default:

@@ -12,19 +12,18 @@ public class PunktyWKole extends AbstractAlgoritm {
     @Override
     public void runAlgoritm(String[] input) {
         double r = Double.parseDouble(input[1]);
-        double rad = r*r;
-        int x = 0, y = 0;
+        double a = -r;
+        double rad = r * r;
         int counter = 1;
-        for (x = 0; x <= r; x++) {
-            for (y = 0; y <= r; y++) {
-                if(((int) Math.sqrt(rad - y*y)) == x) {
+        for (int x = (int) a; x <= (int) r; x++) {
+            for (int y = (int) a; y <= (int) r; y++) {
+                if (((int) Math.sqrt(rad - (int) y * (int) y)) == x) {
                     counter++;
-                }
-                if((int) Math.sqrt(rad - x*x)==y){
-                    counter++;
+//                    boolean b = (int) Math.sqrt(((int) y * (int) y) + (int) x * (int) x) <= (int) r;
+//                    counter++;
                 }
             }
-        }
             System.out.println(counter);
+        }
     }
 }

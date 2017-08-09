@@ -21,11 +21,10 @@ public class NajWuWu extends AbstractAlgoritm {
             return b;
         return nwd(b % a, a);
     }
-
     private int nww(int a, int b) {
         if (a == b){
             return a;
-        } else {
+        }else{
             return (a * b)/nwd(a, b);
         }
     }

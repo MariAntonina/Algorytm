@@ -75,8 +75,6 @@ public class AlgoritmFabric {
 //                return new wlasnaLista();
             case "palindromnastos":
                 return new StosArrayList();
-            case "ciasteczkowezawody":
-                return new Obzartuchy();
             case "poprawnypesel":
                 return new WeryfikacjaPeselu();
             case "wstawianieprzezkocpowanie":
@@ -99,6 +97,10 @@ public class AlgoritmFabric {
                 return new NWDZad10();
             case "not2":
                 return new Notacja2();
+            case  "testsito":
+                return new TestowanieSita();
+            case  "dzien":
+                return new DzienTygodnia();
 
             default:
                 throw new Exception("NIe ma takiego algorytmu!");
