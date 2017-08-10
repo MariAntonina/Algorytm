@@ -55,7 +55,6 @@ public class Kopiec {
                     i = j;
                     j = 2*j + 1;
                 }
-
             _date[i] = lastElement;
         }
         return root;
