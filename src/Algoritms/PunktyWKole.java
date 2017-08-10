@@ -9,10 +9,9 @@ public class PunktyWKole extends AbstractAlgoritm {
     @Override
     public void runAlgoritm(String[] input) {
         double r = Double.parseDouble(input[1]);
-        double a = -r;
         int counter = 0;
-        for (int x = (int) a; x <=  r; x++) {
-            for (int y = (int) a; y <=  r; y++) {
+        for (int x = (int) -r; x <=  r; x++) {
+            for (int y = (int) -r; y <=  r; y++) {
                 if(Math.sqrt(x*x + y*y)<= r)
                     counter++;
             }
