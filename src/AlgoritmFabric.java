@@ -101,8 +101,8 @@ public class AlgoritmFabric {
                 return new TestowanieSita();
             case  "dzien":
                 return new DzienTygodnia();
-//            case "dowod":
-//                return new WeryfikacjaDowoduOsobistego();
+            case "dowod":
+                return new WeryfikacjaDowoduOsobistego();
 
             default:
                 throw new Exception("NIe ma takiego algorytmu!");
