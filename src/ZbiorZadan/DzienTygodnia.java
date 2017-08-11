@@ -1,4 +1,6 @@
-package Algoritms;
+package ZbiorZadan;
+
+import Algoritms.AbstractAlgoritm;
 
 import java.util.ArrayList;
 

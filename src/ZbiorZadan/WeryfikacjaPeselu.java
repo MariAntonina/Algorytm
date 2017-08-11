@@ -1,4 +1,6 @@
-package Algoritms;
+package ZbiorZadan;
+
+import Algoritms.AbstractAlgoritm;
 
 /**
  * Created by admin on 06.08.2017.

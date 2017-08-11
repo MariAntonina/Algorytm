@@ -1,6 +1,8 @@
-package Algoritms;
+package HomeWork;
 
-public class Samolot extends AbstractAlgoritm{
+import Algoritms.AbstractAlgoritm;
+
+public class Samolot extends AbstractAlgoritm {
     @Override
     public String getName() {
         return "Ilość miejsc:";

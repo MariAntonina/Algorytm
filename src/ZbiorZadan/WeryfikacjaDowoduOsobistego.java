@@ -1,6 +1,8 @@
-package Algoritms;
+package ZbiorZadan;
 
-public class WeryfikacjaDowoduOsobistego extends  AbstractAlgoritm {
+import Algoritms.AbstractAlgoritm;
+
+public class WeryfikacjaDowoduOsobistego extends AbstractAlgoritm {
     @Override
     public String getName() {
         return null;

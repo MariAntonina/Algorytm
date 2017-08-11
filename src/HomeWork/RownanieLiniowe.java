@@ -1,9 +1,11 @@
-package Algoritms;
+package HomeWork;
+
+import Algoritms.AbstractAlgoritm;
 
 /**
  * Created by admin on 08.08.2017.
  */
-public class RownanieLiniowe extends AbstractAlgoritm{
+public class RownanieLiniowe extends AbstractAlgoritm {
     @Override
     public String getName() {
         return "Równanie ax + b = c ma:";

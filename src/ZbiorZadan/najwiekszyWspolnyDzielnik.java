@@ -1,4 +1,6 @@
-package Algoritms;
+package ZbiorZadan;
+
+import Algoritms.AbstractAlgoritm;
 
 public class najwiekszyWspolnyDzielnik extends AbstractAlgoritm {
     @Override

@@ -1,4 +1,6 @@
-package Algoritms;
+package HomeWork;
+
+import Algoritms.AbstractAlgoritm;
 
 /**
  * Created by admin on 08.08.2017.

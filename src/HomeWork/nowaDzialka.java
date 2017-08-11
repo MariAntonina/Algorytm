@@ -1,7 +1,9 @@
-package Algoritms;
+package HomeWork;
 
 
-public class nowaDzialka extends AbstractAlgoritm{
+import Algoritms.AbstractAlgoritm;
+
+public class nowaDzialka extends AbstractAlgoritm {
     @Override
     public String getName() {
         return "Kroki kwadratowe";

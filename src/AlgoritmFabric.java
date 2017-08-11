@@ -1,9 +1,8 @@
 import Algoritms.*;
-import Struktury.ONP;
-import Struktury.Stos;
-import Struktury.TestowanieKopca;
-import Struktury.TestowanieListy;
+import HomeWork.*;
+import Struktury.*;
 import StrukturyDanych.*;
+import ZbiorZadan.*;
 
 public class AlgoritmFabric {
 

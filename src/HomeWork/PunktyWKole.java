@@ -1,4 +1,6 @@
-package Algoritms;
+package HomeWork;
+
+import Algoritms.AbstractAlgoritm;
 
 public class PunktyWKole extends AbstractAlgoritm {
     @Override

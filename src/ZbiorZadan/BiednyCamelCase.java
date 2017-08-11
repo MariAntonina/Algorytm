@@ -1,3 +1,5 @@
+package ZbiorZadan;
+
 import Algoritms.AbstractAlgoritm;
 
 public class BiednyCamelCase extends AbstractAlgoritm{

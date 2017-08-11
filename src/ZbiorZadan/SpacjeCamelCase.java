@@ -1,5 +1,7 @@
-package Algoritms;
+package ZbiorZadan;
 
+
+import Algoritms.AbstractAlgoritm;
 
 public class SpacjeCamelCase extends AbstractAlgoritm {
     @Override
