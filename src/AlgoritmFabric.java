@@ -42,8 +42,6 @@ public class AlgoritmFabric {
                 return new tablicaDwuwymiarowa();
             case "krokikwadratowe":
                 return  new nowaDzialka();
-            case "wposzukiwaniupalindromu":
-                return new PalindromyWLiczbach();
             case "nwdto":
                 return new najwiekszyWspolnyDzielnik();
             case "grawwarcaby":
@@ -102,6 +100,8 @@ public class AlgoritmFabric {
                 return new DzienTygodnia();
             case "dowod":
                 return new WeryfikacjaDowoduOsobistego();
+            case "wposzukiewaniupalindromu":
+                return new PalindromyWLiczbach();
 
             default:
                 throw new Exception("NIe ma takiego algorytmu!");
