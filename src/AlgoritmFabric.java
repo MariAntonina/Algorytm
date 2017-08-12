@@ -42,8 +42,8 @@ public class AlgoritmFabric {
                 return new tablicaDwuwymiarowa();
             case "krokikwadratowe":
                 return  new nowaDzialka();
-//            case "wposzukiwaniupalindromu":
-//                return new Palindrom();
+            case "wposzukiwaniupalindromu":
+                return new PalindromyWLiczbach();
             case "nwdto":
                 return new najwiekszyWspolnyDzielnik();
             case "grawwarcaby":
