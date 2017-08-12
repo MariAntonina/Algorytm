@@ -100,6 +100,8 @@ public class AlgoritmFabric {
                 return new DzienTygodnia();
             case "dowod":
                 return new WeryfikacjaDowoduOsobistego();
+            case "skrot":
+                return new Flamaster();
             case "wposzukiewaniupalindromu":
                 return new PalindromyWLiczbach();
 
