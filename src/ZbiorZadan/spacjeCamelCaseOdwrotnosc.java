@@ -29,6 +29,7 @@ public class spacjeCamelCaseOdwrotnosc extends AbstractAlgoritm {
                 else
                     System.out.printf("%s ",strArray[j].toLowerCase());
             }
+            System.out.println();
         }
     }
 }
