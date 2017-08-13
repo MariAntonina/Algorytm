@@ -19,7 +19,7 @@ public class bajtockieSwieto extends AbstractAlgoritm {
         double pole = 0;
         double p = 0;
         double poleHerona = 0;
-        int zuzycie = 0;
+        double zuzycie = 0;
 
         for (int i = 0; i < iterator; i++) {
             int uczesticy = Integer.parseInt(input[it]);
@@ -32,7 +32,7 @@ public class bajtockieSwieto extends AbstractAlgoritm {
             for (int j = 0; j < uczesticy; j++) {
                 double sum = 0;
                 for (int k = 0; k < 3; k++) {
-                    tab[k] = Double.parseDouble(input[it]) / 100;// boki w metrach
+                    tab[k] = Double.parseDouble(input[it])/100;// boki w metrach
                     it++;
                 }
                 if (tab[0] != tab[1] || tab[0] != tab[2] || tab[1] != tab[2]) {
@@ -62,11 +62,13 @@ public class bajtockieSwieto extends AbstractAlgoritm {
                 }
                 p = sum / 2;
                 poleHerona = Math.sqrt(p * (p - tab[0]) * (p - tab[1]) * (p - tab[2]));
+                zuzycie = poleHerona*kreda;
             }
-            poleHerona += poleHerona;
 //            System.out.println(poleHerona);
-            zuzycie = (int)(poleHerona * kreda);
+            zuzycie +=zuzycie;
+            zuzycie = zuzycie/uczesticy;
             System.out.println(zuzycie);
         }
     }
 }
+

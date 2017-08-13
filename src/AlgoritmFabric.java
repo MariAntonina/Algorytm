@@ -108,6 +108,8 @@ public class AlgoritmFabric {
                 return new spacjeCamelCaseOdwrotnosc();
             case "trojkat":
                 return new bajtockieSwieto();
+            case "imieniny":
+                return new imieninyJasia();
 
             default:
                 throw new Exception("NIe ma takiego algorytmu!");
