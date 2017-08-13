@@ -104,6 +104,10 @@ public class AlgoritmFabric {
                 return new Flamaster();
             case "wposzukiewaniupalindromu":
                 return new PalindromyWLiczbach();
+            case "backspacje":
+                return new spacjeCamelCaseOdwrotnosc();
+            case "trojkat":
+                return new bajtockieSwieto();
 
             default:
                 throw new Exception("NIe ma takiego algorytmu!");

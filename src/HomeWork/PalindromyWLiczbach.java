@@ -25,6 +25,7 @@ public class PalindromyWLiczbach extends AbstractAlgoritm {
             for (int i = 0; i < a.length; i++) {
                 if (a[i] == a[a.length - i - 1]) {
                     System.out.println(input[j] + " " + counter);
+                    break;
                 } else if (a[i] != a[a.length - i - 1]) {
                     {
                         do {
