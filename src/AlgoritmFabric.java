@@ -110,6 +110,8 @@ public class AlgoritmFabric {
                 return new bajtockieSwieto();
             case "imieniny":
                 return new imieninyJasia();
+            case "html":
+                return  new tagiHTMLowe();
 
             default:
                 throw new Exception("NIe ma takiego algorytmu!");

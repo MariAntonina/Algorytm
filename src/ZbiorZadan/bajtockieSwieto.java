@@ -1,8 +1,6 @@
 package ZbiorZadan;
 
 import Algoritms.AbstractAlgoritm;
-
-
 /**
  * Created by admin on 13.08.2017.
  */
@@ -16,8 +14,7 @@ public class bajtockieSwieto extends AbstractAlgoritm {
     public void runAlgoritm(String[] input) {
         int iterator = Integer.parseInt(input[1]);
         int it = 2;
-        double pole = 0;
-        double p = 0;
+        double polObwodu = 0;
         double poleHerona = 0;
         double zuzycie = 0;
 
@@ -36,21 +33,20 @@ public class bajtockieSwieto extends AbstractAlgoritm {
                     it++;
                 }
                 if (tab[0] != tab[1] || tab[0] != tab[2] || tab[1] != tab[2]) {
-                    boolean a = false;
+                    boolean trojkat = false;
                     for (int k = tab.length - 1; k >= 0; k--) {
                         if (tab[k] >= tab[max]) {
                             max = k;
-//                            System.out.println(max);
                         }
                         for (int s = 0; s < tab.length; s++) {
                             for (int l = 0; l < tab.length; l++) {
                                 if (tab[s] != tab[max] && tab[j] != tab[s] && tab[j] != tab[max]) {
-                                    a = tab[max] < tab[s] + tab[j];
+                                    trojkat = tab[max] < tab[s] + tab[j];
                                 }
                             }
                         }
                     }
-                    if (a == true) {
+                    if (trojkat == true) {
                         for (int o = 0; o < tab.length; o++) {
                             sum += tab[o];
                         }
@@ -60,11 +56,10 @@ public class bajtockieSwieto extends AbstractAlgoritm {
                         sum += tab[k];
                     }
                 }
-                p = sum / 2;
-                poleHerona = Math.sqrt(p * (p - tab[0]) * (p - tab[1]) * (p - tab[2]));
+                polObwodu = sum / 2;
+                poleHerona = Math.sqrt(polObwodu * (polObwodu - tab[0]) * (polObwodu - tab[1]) * (polObwodu - tab[2]));
                 zuzycie = poleHerona*kreda;
             }
-//            System.out.println(poleHerona);
             zuzycie +=zuzycie;
             zuzycie = zuzycie/uczesticy;
             System.out.println(zuzycie);

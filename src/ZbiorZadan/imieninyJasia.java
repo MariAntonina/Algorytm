@@ -8,22 +8,22 @@ import Algoritms.AbstractAlgoritm;
 public class imieninyJasia extends AbstractAlgoritm {
     @Override
     public String getName() {
-        return null;
+        return "Czy Jas zje w chacie cukierki?";
     }
 
     @Override
     public void runAlgoritm(String[] input) {
-        int uczniowie = Integer.parseInt(input[1]);
-        int cukierki = Integer.parseInt(input[2]);
-        int dopoczestowania = uczniowie-1;
+        int uczniowie = Integer.parseInt(input[1]);// licznosc klasy
+        int cukierki = Integer.parseInt(input[2]);// ilość cukierkow
+        int koledzy = uczniowie-1; //wszyscy uczniowe bez Jasia
 
         if(cukierki> uczniowie){
-            if((double)cukierki/dopoczestowania == 1){
+            if((double)cukierki/koledzy == 1){
                 System.out.println("NIE");
             }
             else{
-                int ile = cukierki/dopoczestowania;
-                int dlaKolegow = dopoczestowania*ile;
+                int ile = cukierki/koledzy;
+                int dlaKolegow = koledzy*ile;
                 int dlaJasia = cukierki-dlaKolegow;
 
                 System.out.println("TAK " + dlaJasia);
