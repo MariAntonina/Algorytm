@@ -56,7 +56,7 @@ public class bajtockieSwieto extends AbstractAlgoritm {
                         sum += tab[k];
                     }
                 }
-                polObwodu = sum / 2;
+                polObwodu = sum/2;
                 poleHerona = Math.sqrt(polObwodu * (polObwodu - tab[0]) * (polObwodu - tab[1]) * (polObwodu - tab[2]));
                 zuzycie = poleHerona*kreda;
             }

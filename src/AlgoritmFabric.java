@@ -112,6 +112,9 @@ public class AlgoritmFabric {
                 return new imieninyJasia();
             case "html":
                 return  new tagiHTMLowe();
+            case "ciaza":
+                return  new ciazowySpecjalista();
+
 
             default:
                 throw new Exception("NIe ma takiego algorytmu!");

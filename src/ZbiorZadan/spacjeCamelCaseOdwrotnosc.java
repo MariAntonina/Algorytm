@@ -12,11 +12,7 @@ public class spacjeCamelCaseOdwrotnosc extends AbstractAlgoritm {
 
     @Override
     public void runAlgoritm(String[] input) {
-//        char[] a;
-//        char[] b;
-//        int place[] = new int[0];
-//        String c;
-//        ArrayList<Integer> miejsca = new ArrayList<Integer>();
+
         String[] r = new String[0];
         String zdanie = null;
         for (int i = 1; i < input.length; i++) {
