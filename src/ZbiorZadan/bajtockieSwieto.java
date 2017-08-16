@@ -1,6 +1,6 @@
 package ZbiorZadan;
 
-        import Algoritms.AbstractAlgoritm;
+import Algoritms.AbstractAlgoritm;
 /**
  * Created by admin on 13.08.2017.
  */
@@ -11,61 +11,47 @@ public class bajtockieSwieto extends AbstractAlgoritm {
     }
 
     @Override
+
     public void runAlgoritm(String[] input) {
+
         int iterator = Integer.parseInt(input[1]);
         int it = 2;
-        double polObwodu = 0;
+        double p = 0;// p =(a+b+c)/2;
         double poleHerona = 0;
-
+        double sumaKompletna = 0;
+        int zapotrzebowanieNaKrede = 0;
 
         for (int i = 0; i < iterator; i++) {
+
             double zuzycie = 0;
+            sumaKompletna = 0.0;
             int uczesticy = Integer.parseInt(input[it]);
             it++;
             double kreda = Double.parseDouble(input[it]); // średnie użycie kredy
             it++;
-            double tab[] = new double[3];
-            int max = 0;
+
 
             for (int j = 0; j < uczesticy; j++) {
+                double sumaBokow = 0;
+                double a = Double.parseDouble(input[it]) / 100;
+                it++;
+                double b = Double.parseDouble(input[it]) / 100;
+                it++;
+                double c = Double.parseDouble(input[it]) / 100;
+                it++;
 
-                double sum = 0;
-                for (int k = 0; k < 3; k++) {
-                    tab[k] = Double.parseDouble(input[it])/100;// boki w metrach
-                    it++;
-                }
-                if (tab[0] != tab[1] || tab[0] != tab[2] || tab[1] != tab[2]) {// trojkat rożnoboczny
-                    boolean trojkat = false;
-                    for (int k = tab.length - 1; k >= 0; k--) {
-                        if (tab[k] >= tab[max]) {
-                            max = k;  // najdluzszy bok
-                        }
-                        for (int s = 0; s < tab.length; s++) {
-                            for (int l = 0; l < tab.length; l++) {
-                                if (tab[s] != tab[max] && tab[j] != tab[s] && tab[j] != tab[max]) {
-                                    trojkat = tab[max] < tab[s] + tab[j]; // czy mozna skonstruowac trojkat
-                                }
-                            }
-                        }
-                    }
-                    if (trojkat == true) {   // jesli  tak to brana jest suma bokow do polowy obwodu
-                        for (int o = 0; o < tab.length; o++) {
-                            sum += tab[o];
-                        }
-                    }
+                if (b < a + c || c < a + b || a < b + c) {
+                    p = (a + b + c) / 2;
                 } else {
-                    for (int k = 0; k < tab.length; k++) {// suma dla trojkata rownobocznego
-                        sum += tab[k];
-                    }
+                    System.out.println("Nie mozna skonstruowac trójkąta");
                 }
-                polObwodu = sum/2;
-                poleHerona = Math.sqrt(polObwodu * (polObwodu - tab[0]) * (polObwodu - tab[1]) * (polObwodu - tab[2]));
-                zuzycie = poleHerona/kreda;
-                zuzycie += zuzycie;
-                zuzycie = zuzycie;
-            }
-            System.out.println(zuzycie);
 
+                poleHerona = Math.sqrt(p * (p - a) * (p - b) * (p - c));
+                zuzycie = poleHerona * kreda;
+                sumaKompletna = sumaKompletna + zuzycie;
+            }
+            zapotrzebowanieNaKrede = (int)(sumaKompletna * 1000);
+            System.out.println(zapotrzebowanieNaKrede);
         }
     }
 }

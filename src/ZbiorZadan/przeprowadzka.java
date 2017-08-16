@@ -3,6 +3,7 @@ package ZbiorZadan;
 import Algoritms.AbstractAlgoritm;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 /**
  * Created by admin on 14.08.2017.
@@ -27,6 +28,8 @@ public class przeprowadzka extends AbstractAlgoritm {
         }
         System.out.println(wagi);
 
+        Collections.sort(wagi);
+
         for (int i = 0; i < iloscTestow; i++) {
             ileRzeczy = Integer.parseInt(input[it]);
             it++;
@@ -48,21 +51,22 @@ public class przeprowadzka extends AbstractAlgoritm {
                     }
                 }
             }
-                    System.out.println(wagi);
-                    System.out.println(counter);
+//                    System.out.println(wagi);
+//                    System.out.println(counter);
 
         for (int t = 0; t < wagi.size(); t++) {
             for (int m = 0; m < wagi.size(); m++) {
                 int max = 0;
-                if((wagi.get(t) + wagi.get(m)) < pojemnosc && t != m) //&& (Math.max( wagi.get(k))>wagi.get(j))) {
-                {if (wagi.get(m) > max) {
-                    max = m;
-                    wagi.remove(m); // tu yslalam zeby wstawic wartość max
-                    wagi.remove(t);}
+                if((wagi.get(t) + wagi.get(m)) < pojemnosc && t != m) {
+                    if (wagi.get(m) > max) {
+                        max = m;
+                        wagi.remove(m);
+                        wagi.remove(t);}
+                }
                     counter++;
                 }
-                System.out.println(wagi);
-                System.out.println(counter);
+//                System.out.println(wagi);
+//                System.out.println(counter);
                     }
                 }
 

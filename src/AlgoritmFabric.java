@@ -34,7 +34,7 @@ public class AlgoritmFabric {
                 return new SortowanieWzgledemPunktu();
             case "iloscmiejsc":
                 return new Samolot();
-            case "zliczaczliter":
+            case "zliczacz":
                 return new zliczaczLiter();
             case "sortowanieelementow":
                 return new sortowaniePrzezZliczanie();
