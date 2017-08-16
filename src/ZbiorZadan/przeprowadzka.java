@@ -33,12 +33,10 @@ public class przeprowadzka extends AbstractAlgoritm {
             pojemnosc = Integer.parseInt(input[it]);
             it++;
             for (int j = 0; j < wagi.size(); j++) {
-                for (int k = wagi.size() - 1; k >= 0; k--) {
-                    if (wagi.get(j) == pojemnosc) {
-                        counter++;
-                        wagi.remove(j);
+                if (wagi.get(j) == pojemnosc) {
+                    counter++;
+                    wagi.remove(j);
 //                        System.out.println(wagi);
-                    }
                 }
             }
             for (int j = 0; j < wagi.size(); j++) {
@@ -50,31 +48,34 @@ public class przeprowadzka extends AbstractAlgoritm {
                     }
                 }
             }
-//                    System.out.println(wagi);
-//                    System.out.println(counter);
+                    System.out.println(wagi);
+                    System.out.println(counter);
 
-            for (int j = 0; j < wagi.size(); j++) {
-                for (int k = 0; k < wagi.size(); k++) {
-                    while ((wagi.get(j) + wagi.get(k)) < pojemnosc && j != k) //&& (Math.max( wagi.get(k))>wagi.get(j))) {
-                    { counter++;
-                        wagi.remove(k);
-                        wagi.remove(j);
-                        break;
-                    }
-//                    System.out.println(wagi);
-//                    System.out.println(counter);
-                }
-            }
-            for (int j = 0; j < wagi.size(); ) {
-                if (wagi.get(j) < pojemnosc) {
-                    wagi.remove(j);
+        for (int t = 0; t < wagi.size(); t++) {
+            for (int m = 0; m < wagi.size(); m++) {
+                int max = 0;
+                if((wagi.get(t) + wagi.get(m)) < pojemnosc && t != m) //&& (Math.max( wagi.get(k))>wagi.get(j))) {
+                {if (wagi.get(m) > max) {
+                    max = m;
+                    wagi.remove(m); // tu yslalam zeby wstawic wartość max
+                    wagi.remove(t);}
                     counter++;
+                }
+                System.out.println(wagi);
+                System.out.println(counter);
+                    }
+                }
+
+
+                for (int s = 0; s < wagi.size(); ) {
+                    if (wagi.get(s) < pojemnosc) {
+                        wagi.remove(s);
+                        counter++;
 //                    System.out.println(wagi);
 //                    System.out.println(counter);
+                    }
                 }
-            }
-            System.out.println(counter);
-        }
-    }
-}
+                System.out.println(counter);
 
+            }
+        }
