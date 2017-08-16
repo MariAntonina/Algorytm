@@ -26,7 +26,6 @@ public class snieg extends AbstractAlgoritm {
     private int nwd(int a, int b) {
         if (a == 0)
             return b;
-
         return nwd(b % a, a);
     }
 

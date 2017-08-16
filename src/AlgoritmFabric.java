@@ -106,8 +106,8 @@ public class AlgoritmFabric {
                 return new PalindromyWLiczbach();
             case "backspacje":
                 return new spacjeCamelCaseOdwrotnosc();
-//            case "trojkat":
-//                return new bajtockieSwieto();
+            case "trojkat":
+                return new bajtockieSwieto();
             case "imieniny":
                 return new imieninyJasia();
             case "html":
