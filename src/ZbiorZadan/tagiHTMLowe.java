@@ -19,7 +19,6 @@ public class tagiHTMLowe extends AbstractAlgoritm {
             word = input[i].toCharArray();
 
             for (int j = 0; j < word.length; j++) {
-                System.out.println();
                 if (word[j] == '<') {
                     while (word[j] != '>') {
                         System.out.print(Character.toString(word[j]).toUpperCase());
@@ -27,15 +26,13 @@ public class tagiHTMLowe extends AbstractAlgoritm {
                     }
                     System.out.print("> ");
                 } else {
-                    System.out.printf("%s", Character.toString(word[j]));
-                    if (j == word.length - 1) {
-                        System.out.print(" ");
-                    }
-                }
+                    System.out.print( Character.toString(word[j]));
+                 }
             }
         }
     }
 }
+
 
 
 
