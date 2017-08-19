@@ -16,6 +16,7 @@ public class tagiHTMLowe extends AbstractAlgoritm {
 
         char[] word = new char[0];
         for (int i = 1; i < input.length; i++) {
+            System.out.println();
             word = input[i].toCharArray();
 
             for (int j = 0; j < word.length; j++) {
@@ -25,9 +26,10 @@ public class tagiHTMLowe extends AbstractAlgoritm {
                         j++;
                     }
                     System.out.print("> ");
+//                    System.out.println();
                 } else {
-                    System.out.print( Character.toString(word[j]));
-                 }
+                    System.out.print(Character.toString(word[j]));
+                }
             }
         }
     }
