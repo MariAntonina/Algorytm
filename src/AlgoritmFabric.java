@@ -101,7 +101,7 @@ public class AlgoritmFabric {
             case "dowod":
                 return new WeryfikacjaDowoduOsobistego();
             case "skrot":
-                return new Flamaster();
+                return new SkracanieIdentyfikatorow();
             case "wposzukiewaniupalindromu":
                 return new PalindromyWLiczbach();
             case "backspacje":

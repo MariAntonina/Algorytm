@@ -16,81 +16,61 @@ public class SkracanieIdentyfikatorow extends AbstractAlgoritm {
     @Override
     public void runAlgoritm(String[] input) {
 
-        ArrayList<Character> numbers = new ArrayList<>();
+
         char cyfa[] = "1234567890".toCharArray();
-        for (int i = 0; i < cyfa.length; i++) {
-            numbers.add(cyfa[i]);
-            System.out.println(numbers);
-        }
-
-        ArrayList<Character> letters = new ArrayList<>();
         char litera[] = "abcdefghijklmnopqrstuwvxyzABCDEFGHIJKLMNOPQRSTUWVXYZ".toCharArray();
-        for (int i = 0; i < litera.length; i++) {
-            letters.add(litera[i]);
-        }
-
-        ArrayList<Character> samoglos = new ArrayList<>();
-        char samogloska[] = "aoieuy".toCharArray();
-        for (int i = 0; i < samogloska.length; i++) {
-            samoglos.add(samogloska[i]);
-        }
+        char samogloska[] = "aoieuyAOIEUY".toCharArray();
 
         int n = Integer.parseInt(input[1]);
         char zmienna[] = input[2].toCharArray();
+        int długosc = zmienna.length;
 
-        ArrayList<String> doSkrotu = new ArrayList<>();
+        StringBuilder doSkrotu = new StringBuilder();
+        doSkrotu.append(zmienna);
 
-        for (int i = 0; i < zmienna.length; i++) {
-            doSkrotu.add(String.valueOf(i));
-        }
-        if (doSkrotu.size() == n) {
+        if (długosc == n) {
             System.out.println(input[2]);
-        } else if (doSkrotu.size() != n) {
-            for (int i = doSkrotu.size() - 1; i >= 0; i--) {
-                while (doSkrotu.size() != n) {
-                    for (int j = 0; j < letters.size(); j++) {
-                        for (int k = 0; k < numbers.size(); k++) {
-                            if (!(doSkrotu.contains(letters.get(j))) && !(doSkrotu.contains(numbers.get(k)))) {
-                                doSkrotu.remove(i);
-                            }
-                        }
-                        break;
+        } else if (długosc != n) {
+            for (int i = zmienna.length - 1; i >= 0; i--) {
+                while (długosc != n) {
+                    if (!(Character.isLetterOrDigit(zmienna[i]))) {
+                        doSkrotu.deleteCharAt(i);
+                        zmienna = doSkrotu.toString().toCharArray();
+                        długosc = zmienna.length;
                     }
-                    System.out.println(doSkrotu);
-                }
-                for (int s = doSkrotu.size() - 1; s >= 0; s--) {
-                    while (doSkrotu.size() != n) {
-                        for (int k = 0; k < numbers.size(); k++) {
-                            if (doSkrotu.contains(numbers.get(k))) {
-                                doSkrotu.remove(s);
-                            }
-                        }
-                        break;
+                    if (Character.isDigit(zmienna[i])) {
+                        doSkrotu.deleteCharAt(i);
+                        zmienna = doSkrotu.toString().toCharArray();
+                        długosc = zmienna.length;
                     }
-                    System.out.println(doSkrotu);
-                }
-                for (int j = 1; j < doSkrotu.size(); j++) {
-                    while (doSkrotu.size() != n) {
-                        for (int k = 0; k < samoglos.size(); k++) {
-                            if (doSkrotu.contains(samoglos.get(k))) {
-                                doSkrotu.remove(j);
-                            }
-                            break;
-                        }
-                        System.out.println(doSkrotu);
-                    }
-
-                    for (int t = doSkrotu.size() - 2; t >= 0; t--) {
-                        while (doSkrotu.size() != n) {
-                            doSkrotu.remove(t);
-                        }
-                        break;
-                    }
-                    System.out.println(doSkrotu);
+                    break;
                 }
             }
-        }
+//            System.out.println(zmienna.length);
 
+            for (int j = 1; j < zmienna.length; j++) {
+                while (zmienna.length != n) {
+                    for (int i = 0; i < samogloska.length; i++) {
+                        if (zmienna[j] == samogloska[i]) {
+                            doSkrotu.deleteCharAt(j);
+                            zmienna = doSkrotu.toString().toCharArray();
+                            długosc = zmienna.length;
+                        }
+                    }
+                    break;
+                }
+            }
+//            System.out.println(zmienna.length);
+
+            for (int j = zmienna.length - 2; j >= 0; j--) {
+                while (długosc != n) {
+                    doSkrotu.deleteCharAt(j);
+                    zmienna = doSkrotu.toString().toCharArray();
+                    długosc = zmienna.length;
+                    break;
+                }
+            }
+            System.out.println(zmienna);
+        }
     }
 }
-
