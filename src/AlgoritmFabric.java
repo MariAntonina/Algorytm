@@ -118,8 +118,8 @@ public class AlgoritmFabric {
                 return new przeprowadzka();
             case "slad":
                 return new snieg();
-
-
+            case "peczec":
+                return new pieczatkiDzieci();
             default:
                 throw new Exception("NIe ma takiego algorytmu!");
         }
